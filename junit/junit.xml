@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="77.993918">
+<testcase classname="To validate the amazon login functionality" name="To validate the valid email id and invalid password" time="22.297909">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.AmazonStepFile.toClickTheContinueButton(AmazonStepFile.java:27)&#13;&#10;&#9;at ✽.To click the continue button(src/test/resources/AmazonLogincredential.feature:7)&#13;&#10;"><![CDATA[Given To launch the chrome browser and hit amazon url.......................passed
+When To pass the valid email id to username field...........................passed
+And To click the continue button............................................failed
+And To pass the invalid password to password field..........................skipped
+And To click the sign-in button.............................................skipped
+And To check the otp........................................................undefined
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.AmazonStepFile.toClickTheContinueButton(AmazonStepFile.java:27)
+	at ✽.To click the continue button(src/test/resources/AmazonLogincredential.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="To validate the facebook login functionality" name="To validate the invalid credential" time="5.881519">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepdefinition.FacebookStepFile.to_pass_the_invalid_value_to_password_field(FacebookStepFile.java:38)&#13;&#10;&#9;at ✽.To pass the invalid value to password field(src/test/resources/FaceBookcredential.feature:13)&#13;&#10;"><![CDATA[Given To launch the browser and hit facebook url............................passed
+When To pass the invalid value to username field............................passed
+And To pass the invalid value to password field.............................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepdefinition.FacebookStepFile.to_pass_the_invalid_value_to_password_field(FacebookStepFile.java:38)
+	at ✽.To pass the invalid value to password field(src/test/resources/FaceBookcredential.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="To validate the facebook login functionality" name="To execute the bulk execution" time="9.045556">
+<system-out><![CDATA[Given To launch the browser and hit facebook url............................passed
+When To pass"java123@gmail.com" the bulk data to username field.............passed
+And To pass the bulk data to"java123" password field........................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the facebook login functionality" name="To execute the bulk execution 2" time="13.26751">
+<system-out><![CDATA[Given To launch the browser and hit facebook url............................passed
+When To pass"selenium123@gmail.com" the bulk data to username field.........passed
+And To pass the bulk data to"selenium123" password field....................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the facebook login functionality" name="To execute the bulk execution 3" time="8.67148">
+<system-out><![CDATA[Given To launch the browser and hit facebook url............................passed
+When To pass"sql1232gmail.com" the bulk data to username field..............passed
+And To pass the bulk data to"sql123" password field.........................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the facebook login functionality" name="To execute the bulk execution 4" time="9.47981">
+<system-out><![CDATA[Given To launch the browser and hit facebook url............................passed
+When To pass"testng123@gmail.com" the bulk data to username field...........passed
+And To pass the bulk data to"testNg123" password field......................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the facebook login functionality" name="To execute the bulk execution 5" time="9.350134">
+<system-out><![CDATA[Given To launch the browser and hit facebook url............................passed
+When To pass"cucumber123@gmail.com" the bulk data to username field.........passed
+And To pass the bulk data to"cucumber123" password field....................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

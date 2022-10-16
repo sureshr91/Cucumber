@@ -1,0 +1,2 @@
+src/test/resources/FaceBookcredential.feature:7
+src/test/resources/AmazonLogincredential.feature:4
